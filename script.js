@@ -1,8 +1,13 @@
 const questions = document.querySelectorAll(".question")
-console.log(questions)
+
 
 questions.forEach((question)=>{
-    question.addEventListener('click',(question)=>{
-        console.log("hello")
-    })
-})
+    question.addEventListener('click',showAnwer)})
+
+
+
+function showAnwer(e){
+    const answer = e.target.nextElementSibling
+    answer.classList.toggle('answer-active')
+    
+}
