@@ -68,21 +68,7 @@ body {
   /*  margin-bottom: 10px; */
   border-bottom: 2px solid hsl(240, 5%, 91%);
 }
-.question {
-  display: flex;
-  height: 47px;
-  justify-content: flex-start;
-  align-items: center;
-}
-.answer {
-  overflow: hidden;
-  height: 0px;
-  transition: height 5s ease;
-}
-.answer-active {
-  height: auto;
-  margin-bottom: 10px;
-}
+
 .answer p {
   color: var(--dark-blue);
 }
