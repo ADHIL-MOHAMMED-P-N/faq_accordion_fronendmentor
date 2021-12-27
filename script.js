@@ -1,13 +1,12 @@
 const questions = document.querySelectorAll(".question")
-
-
-questions.forEach((question)=>{
-    question.addEventListener('click',showAnwer)})
-
-
-
-function showAnwer(e){
-    const answer = e.target.nextElementSibling
-    answer.classList.toggle('answer-active')
-    
-}
+questions.forEach((qustion)=>{
+    qustion.addEventListener('click',function(){
+        this.classList.toggle("active")
+        const panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+    })
+})

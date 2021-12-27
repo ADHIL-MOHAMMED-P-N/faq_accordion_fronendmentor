@@ -68,11 +68,32 @@ body {
   /*  margin-bottom: 10px; */
   border-bottom: 2px solid hsl(240, 5%, 91%);
 }
-
+.answer {
+  display: none;
+}
 .answer p {
   color: var(--dark-blue);
 }
 
+.question {
+  width: 100%;
+  text-align: left;
+  border: none;
+  padding: 14px 0px;
+  outline: none;
+  cursor: pointer;
+  border-bottom: 1px solid #b9b9b9;
+}
+.question:hover {
+  color: var(--soft-red);
+}
+.active {
+  font-weight: 700;
+  color: black;
+}
+.active:hover {
+  color: black;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
